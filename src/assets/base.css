@@ -1,0 +1,1199 @@
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-CondensedBold.woff") format("woff");
+    font-weight: 700;
+    font-style: condensed;
+    font-display: auto;
+}
+
+
+/* @font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-Condensed.woff") format("woff");
+    font-weight: 500;
+    font-style: condensed;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-CondensedLight.woff") format("woff");
+    font-weight: 300;
+    font-style: condensed;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("fonts/subset-AmericanTypewriter-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: semibold;
+    font-display: auto;
+}
+
+
+/* @font-face {
+    font-family: "Futura";
+    src: url("fonts/subset-Futura-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/subset-Futura-CondensedExtraBold.woff") format("woff");
+    font-weight: 700;
+    font-style: condensed;
+    font-display: auto;
+}
+
+
+/* @font-face {
+    font-family: "Futura";
+    src: url("fonts/subset-Futura-CondensedMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: bold;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/subset-Futura-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: medium;
+    font-display: auto;
+}
+
+
+/* @font-face {
+    font-family: "Futura";
+    src: url("fonts/subset-Futura-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "Trebuchet";
+    src: url("fonts/subset-Trebuchet-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: auto;
+}
+
+
+/* @font-face {
+    font-family: "Trebuchet";
+    src: url("fonts/subset-TrebuchetMS-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: auto;
+} */
+
+@font-face {
+    font-family: "Trebuchet";
+    src: url("fonts/subset-TrebuchetMS-Italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: "Trebuchet";
+    src: url("fonts/subset-TrebuchetMS.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+:root {
+    --app-border: 1pt solid #000;
+    --top-height: 34px;
+    --img-height: 216px;
+    --img-width: 100%;
+    --info-margin: 0 0 0 5vw;
+    --info-margin-width: calc(100% - 18px);
+    --info-n-height: 60vh;
+    --info-n-width: 60vh;
+    --info-n-top: 5vh;
+    --info-n-left: 5vh;
+    --text-z-index: 0;
+    --info-header-height: 44px;
+    --info-header-width: 86%;
+    --info-header-margin: 20% auto 0;
+    --info-price-height: 84px;
+    --info-info-height: 24px;
+    --info-price-grid-template-columns: max(80px) 29px;
+    --info-price-grid-template-rows: 50% 50%;
+    /* --info-price-grid-template-rows: 72% 28%; */
+    --info-position: relative;
+    --info-bottom: auto;
+    --info-height: 104px;
+    --info-info-height: 90%;
+    --info-width: 100%;
+    --info-right: 0;
+    --text-font: AmericanTypewriter;
+    --footer-opening-height: auto;
+    --footer-opening-width: 100%;
+    --footer-shop-grid-column: 1 / 2;
+    --footer-shop-grid-row: 3 / 4;
+    --footer-logo-grid-column: 2 / 3;
+    --footer-logo-grid-row: 3 / 4;
+    --footer-opening-grid-column: 1 / 3;
+    --footer-opening-grid-row: 1 / 2;
+    --footer-opening-grid-padding: 0;
+    --footer-text-hide-start: "block";
+    --footer-line-break-2: "";
+    --footer-line-break-3: "";
+    --footer-line-display-side: none;
+    --footer-line-display-bottom: none;
+    --footer-line-display-bottom-top: 100%;
+    --footer-shop-background-posistion: center;
+    --footer-logo-background-posistion: center;
+    --info-bottom-grid-columns: calc(60%) calc(40% - 4px);
+    --info-bottom-grid-rows: 50% 50%;
+    --info-bottom-grid-gap: 0 4px;
+    --info-header-columns: 1 / 3;
+    --info-header-rows: 1 / 2;
+    --info-info-columns: 1 / 2;
+    --info-info-rows: 2 / 3;
+    --info-info-line-height: 1.1;
+    --info-price-columns: 2 / 3;
+    --info-price-rows: 2 / 3;
+    --info-price-margins: none;
+    --info-price-marginTop: auto;
+    --info-price-ore-margin: 10%;
+    --info-price-ore-margin: 32%;
+    --info-price-underPrice-height: 6%;
+    --info-price-underPrice-width: 45%;
+    --img-container-height: 96%;
+    --img-container-width: 96%;
+    --img-container-left: 0%;
+    --img-container-padding: 5%;
+    --img-container-padding: 2%;
+    --headerPrice-padding: 0;
+}
+
+.__maximat {
+    --display-br: block;
+}
+
+.__nordby {
+    /* --app-border: 1pt solid #1287C9; */
+    --info-price-ore-margin: 10%;
+    --text-font: Trebuchet;
+    --info-price-grid-template-rows: 60% 40%;
+    --footer-opening-margin: 0;
+    --info-n-top-bottom: var(--info-n-top);
+    --info-n-top-top: var(--info-n-top);
+    --info-n-left-left: var(--info-n-left);
+    --info-n-left-right: var(--info-n-left);
+    --img-img-size: contain !important;
+    --img-img-size-center: contain !important;
+    --img-container-width-center: var(--img-container-width);
+}
+
+.__svinesund {
+    /* --app-border: 1pt solid #c8102e; */
+    --info-price-margin: auto;
+    --footer-opening-svonesund-flexdirection: column;
+    /* --info-price-ore-margin: 10%; 
+    --text-font: Trebuchet;
+    --info-price-grid-template-rows: 60% 40%; */
+}
+
+
+/* @media (min-width: 298px) and (max-width: 302px) and (min-height: 598px) and (max-height: 602px) {
+    :root {
+        --top-height: 40px;
+        --img-height: 235px;
+        --info-height: 150px;
+    }
+} */
+
+@media (min-width: 318px) and (max-width: 322px) and (min-height: 398px) and (max-height: 402px) {
+     :root {
+        --top-height: 34px;
+        --img-height: 164px;
+        --info-price-grid-template-columns: minmax(60px, 80px) 29px;
+        --info-height: 117px;
+        --info-header-height: 45px;
+        --info-bottom-height: 69px;
+        --info-bottom-grid-rows: 54px 60px;
+        --info-bottom-grid-columns: calc(60%) calc(36% - 4px);
+        --info-price-rows: 1 / 3;
+        --info-info-line-height: 1.4;
+        --footer-opening-height: 15px;
+        --footer-grid-template-colums: 50% 50%;
+        --footer-grid-template-rows: 34px 282px 84px;
+        --info-price-grid-template-columns: 84px 29px;
+        --footer-shop-size: 67% !important;
+        --footer-logo-size: 85% !important;
+        /* --footer-line-display-side: block; */
+        --footer-line-display-side: none;
+        --info-price-marginTop: 40px;
+        --info-price-ore-margin: 32%;
+    }
+    .__maximat {
+        --display-br: none;
+    }
+    .__nordby {
+        /* --text-font: Trebuchet; */
+        /* --info-price-grid-template-columns: max(80px) 59px; */
+        --img-img-size: contain !important;
+        /* --img-img-size-center: 200px, auto, contain !important; */
+        --img-container-width-center: 50%;
+        --img-container-padding: 5% 5% 5% 5%;
+        --img-container-height: 90%;
+        --img-container-width: 90%;
+        --info-price-ore-margin: 10%;
+        --info-header-margin: 20.1% auto 0;
+        --info-header-height: 46px;
+        --info-n-top-bottom: var(--info-n-top);
+        --info-n-top-top: 23vh;
+        --info-n-left-left: 25vh;
+        --info-n-left-right: var(--info-n-left);
+        --info-n-left: 25vh;
+        --info-n-height: 54vh;
+        --info-n-width: 54vh;
+        /* --info-price-grid-template-columns: max(90px) 29px; */
+        /* --info-price-grid-template-columns: max(100px) 46px; */
+        --info-price-grid-template-columns: max(120px) 38px;
+        --info-price-grid-template-rows: 50% 50%;
+        --info-price-underPrice-width: 58%;
+        --info-price-underPrice-height: 20px;
+        --info-price-height: 95px;
+        --info-price-height-under: 84px;
+        --info-price-marginTop: auto;
+        --info-info-height: 18px;
+        --top-height: 0px;
+        --img-height: 316px;
+        --info-n-top: 1vh;
+        /* --info-n-left: 1.3vh; */
+        --footer-opening-height: 100%;
+        --footer-opening-width: 80px;
+        --footer-text-hide-start: none;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        --footer-grid-template-colums: 95px 70px 1fr;
+        --footer-grid-template-rows: 1fr 84px;
+        --footer-shop-grid-column: 1 / 2;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-logo-grid-column: 3 / 4;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-line-display-side: none;
+        --footer-opening-margin: -4% 0 0 0;
+        --footer-shop-background-posistion: left 15px center;
+        --footer-shop-size: 78% !important;
+        --footer-logo-background-posistion: right 12px center;
+        --footer-logo-size: 89% !important;
+    }
+    .__svinesund {
+        --top-height: 0;
+        --img-height: 194px;
+        --img-container-height: 94%;
+        --info-height: 122px;
+        --info-margin-width: calc(100% - 36px);
+        --info-margin: 0 15px 0 17px;
+        --info-header-height: 40px;
+        --info-bottom-grid-rows: 50px 71px;
+        --info-info-line-height: 1.18;
+        --info-bottom-grid-gap: 0 4px;
+        --info-info-height: 50px;
+        --footer-grid-template-rows: 316px 84px;
+        --info-price-grid-template-rows: 40% 60%;
+        --info-price-grid-template-columns: 114px 20px;
+        --info-price-marginTop: auto;
+        --info-bottom-grid-columns: calc(55%) calc(45% - 10px);
+        --footer-opening-grid-column: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-opening-height: 100%;
+        --footer-opening-width: 80px;
+        --footer-text-hide-start: none;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        --footer-line-display-side: none;
+        --footer-logo-size: 71% !important;
+        --footer-logo-background-posistion: right 50px center;
+        --footer-grid-template-colums: 46% 64%;
+        --info-price-ore-margin: 25%;
+        /* --info-price-ore-margin: 10%; 
+        --text-font: Trebuchet;
+        --info-price-grid-template-rows: 60% 40%; */
+    }
+}
+
+@media (min-width: 298px) and (max-width: 302px) and (min-height: 598px) and (max-height: 602px) {
+     :root {
+        --top-height: 42px;
+        /* --img-height: 164px; */
+        --img-height: 234px;
+        --info-price-grid-template-columns: minmax(60px, 80px) 29px;
+        --info-height: 150px;
+        --info-header-height: 45px;
+        --info-bottom-height: 69px;
+        --info-bottom-grid-rows: 54px 86px;
+        --info-bottom-grid-columns: calc(60%) calc(36% - 4px);
+        --info-bottom-grid-gap: 0 2px;
+        --info-price-rows: 1 / 3;
+        --info-info-line-height: 1.4;
+        --footer-opening-height: 15px;
+        --footer-grid-template-colums: 1fr;
+        --footer-grid-template-rows: 42px 384px 102px 72px;
+        --info-price-grid-template-columns: 80px 24px;
+        --info-price-ore-margin: 32%;
+        --info-price-marginTop: 50px;
+        /* --footer-line-display-side: block; */
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: block;
+        --footer-shop-grid-column: 1 / 2;
+        --footer-shop-grid-row: 4 / 5;
+        --footer-logo-grid-column: 1 / 2;
+        --footer-logo-grid-row: 3 / 4;
+        /* --footer-line-display-bottom: block; */
+        --footer-shop-size: 30% !important;
+        --footer-logo-size: 180px !important;
+    }
+    .__maximat {
+        --display-br: none;
+    }
+    .__nordby {
+        --top-height: 0px;
+        --img-container-width: 91.3%;
+        --img-container-width: 96.3%;
+        --img-container-height: 43%;
+        --img-height: 67.7%;
+        --img-container-padding: 71% 2% 2% 2%;
+        --info-info-height: 21px;
+        --info-price-height: 96px;
+        --info-price-ore-margin: 5%;
+        --info-price-underPrice-width: 60%;
+        --info-price-underPrice-height: 20px;
+        --info-header-height: 44px;
+        --info-header-margin: 17% auto 0;
+        --info-n-top: 1.7vh;
+        --info-n-left: 8.7vw;
+        --info-n-height: 40vh;
+        --info-n-width: 40vh;
+        --info-price-grid-template-columns: max(135px) 40px;
+        /* --footer-grid-template-colums: 393px 187px; */
+        --footer-grid-template-colums: 300px;
+        --footer-grid-template-rows: 382px 93px 53px 71px;
+        --footer-shop-grid-row: 4 /5;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-logo-size: 80% !important;
+        --footer-line-display-bottom: block;
+        --footer-text-hide-start: none;
+        --footer-shop-size: 30% !important;
+        --footer-opening-grid-row: 3 / 4;
+        --footer-opening-grid-column: 1 / 2;
+        --footer-opening-width: 80%;
+        --footer-opening-height: max-content;
+        --footer-line-display-bottom-top: 150%;
+    }
+    .__svinesund {
+        /* --top-height: 0;
+        --img-height: 194px;
+        --img-container-height: 94%;
+        --info-height: 122px;
+        --info-margin-width: calc(100% - 36px);
+        --info-margin: 0 15px 0 17px;
+        --info-header-height: 40px;
+        --info-bottom-grid-rows: 50px 71px;
+        --info-info-line-height: 1.18;
+        --info-bottom-grid-gap: 0 4px;
+        --info-info-height: 50px; */
+        --img-height: 281px;
+        --footer-grid-template-rows: 42px 426px 131px;
+        /* --footer-logo-size: 68% !important; */
+        --footer-opening-svonesund-flexdirection: row;
+        --footer-opening-width: auto;
+        /* --info-price-grid-template-rows: 40% 60%;
+        --info-price-grid-template-columns: 114px 20px; */
+        /* --info-price-marginTop: auto;
+        --info-bottom-grid-columns: calc(55%) calc(50% - 10px); */
+        /* --footer-opening-grid-column: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3; */
+        /* --footer-opening-height: 100%;
+        --footer-opening-width: 80px;
+        --footer-text-hide-start: none; */
+        /* --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a"; */
+        /* --footer-line-display-side: none; */
+        /* --footer-logo-size: 71% !important; */
+        /* --footer-logo-background-posistion: right 50px center; */
+        /* --footer-grid-template-colums: 46% 64%; */
+        /* --info-price-ore-margin: 25%; */
+        /* --info-price-ore-margin: 10%; 
+        --text-font: Trebuchet;
+        --info-price-grid-template-rows: 60% 40%; */
+    }
+}
+
+@media (min-width: 178px) and (max-width: 182px) and (min-height: 498px) and (max-height: 502px) {
+     :root {
+        --top-height: 34px;
+        /* --img-height: 164px; */
+        --img-height: 216px;
+        --info-price-grid-template-columns: minmax(60px, 80px) 29px;
+        --info-height: 105px;
+        --info-header-height: 37px;
+        --info-header-height: 44px;
+        --info-bottom-height: 69px;
+        --info-bottom-grid-rows: 36px 63px;
+        --info-bottom-grid-rows: 45px 63px;
+        --info-bottom-grid-columns: calc(60%) calc(36% - 4px);
+        --info-bottom-grid-gap: 0 2px;
+        --info-price-rows: 1 / 3;
+        --info-info-line-height: 1.4;
+        --footer-opening-height: 15px;
+        --footer-grid-template-colums: 1fr;
+        --footer-grid-template-rows: 34px 321px 87px 58px;
+        --info-price-grid-template-columns: 49px 16px;
+        --info-price-ore-margin: 50%;
+        --info-price-ore-margin: 65%;
+        --info-price-marginTop: 22px;
+        --footer-text-hide-start: none;
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: block;
+        --footer-shop-grid-column: 1 / 2;
+        --footer-shop-grid-row: 4 / 5;
+        --footer-logo-grid-column: 1 / 2;
+        --footer-logo-grid-row: 3 / 4;
+        /* --footer-line-display-bottom: block; */
+        --footer-shop-size: 40% !important;
+        --footer-logo-size: 81% !important;
+    }
+    .__maximat {
+        --display-br: none;
+    }
+    .__nordby {
+        --top-height: 0px;
+        --img-container-width: 91.3%;
+        --img-container-width: 90.3%;
+        /* --img-container-height: 46%; */
+        --img-container-height: 55%;
+        /* --img-height: 72%; */
+        /* --img-height: 359px; */
+        --img-height: 362px;
+        --img-container-padding: 71% 5% 2%;
+        --info-price-ore-margin: 10%;
+        --info-header-margin: 18% auto 0;
+        --info-header-height: 40px;
+        /* --info-price-grid-template-columns: max(90px) 29px; */
+        /* --info-price-grid-template-columns: max(100px) 46px; */
+        --info-price-grid-template-columns: max(90px) 34px;
+        --info-price-grid-template-rows: 50% 50%;
+        --info-price-underPrice-width: 60%;
+        --info-price-underPrice-height: 20px;
+        --info-price-height: 60px;
+        --info-price-marginTop: auto;
+        --info-info-height: 14px;
+        --top-height: 0px;
+        /* --img-height: 316px; */
+        --info-n-top: 1vh;
+        --info-n-left: 1.3vh;
+        --info-n-height: 94vw;
+        --info-n-width: 94vw;
+        /* --footer-grid-template-colums: 393px 187px; */
+        --footer-grid-template-colums: 180px;
+        --footer-grid-template-rows: 337px 54px 40px 68px;
+        --footer-shop-grid-row: 4 /5;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-logo-size: 78% !important;
+        --footer-line-display-bottom: block;
+        --footer-text-hide-start: none;
+        --footer-shop-size: 30% !important;
+        --footer-opening-grid-row: 3 / 4;
+        --footer-opening-grid-column: 1 / 2;
+        --footer-opening-width: 80%;
+        --footer-opening-height: max-content;
+        --footer-line-display-bottom-top: 170%;
+    }
+    .__svinesund {
+        /* --top-height: 0;
+        --img-height: 194px;
+        --img-container-height: 94%;
+        --info-height: 122px;
+        --info-margin-width: calc(100% - 36px);
+        --info-margin: 0 15px 0 17px;
+        --info-header-height: 40px;
+        --info-bottom-grid-rows: 50px 71px;
+        --info-info-line-height: 1.18;
+        --info-bottom-grid-gap: 0 4px;
+        --info-info-height: 50px; */
+        --img-height: 240px;
+        --info-header-height: 44px;
+        --info-price-margin: 22px;
+        /* --info-bottom: 41px; */
+        --footer-grid-template-rows: 34px 351px 1fr;
+        /* --footer-logo-size: 68% !important; */
+        --footer-opening-svonesund-flexdirection: row;
+        --footer-opening-width: auto;
+        /* --info-price-grid-template-rows: 40% 60%;
+        --info-price-grid-template-columns: 114px 20px; */
+        /* --info-price-marginTop: auto;
+        --info-bottom-grid-columns: calc(55%) calc(50% - 10px); */
+        /* --footer-opening-grid-column: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-opening-grid-row: 2 / 3; */
+        /* --footer-opening-height: 100%;
+        --footer-opening-width: 80px;
+        --footer-text-hide-start: none; */
+        /* --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a"; */
+        /* --footer-line-display-side: none; */
+        /* --footer-logo-size: 71% !important; */
+        /* --footer-logo-background-posistion: right 50px center; */
+        /* --footer-grid-template-colums: 46% 64%; */
+        /* --info-price-ore-margin: 25%; */
+        /* --info-price-ore-margin: 10%; 
+        --text-font: Trebuchet;
+        --info-price-grid-template-rows: 60% 40%; */
+    }
+}
+
+@media (min-width: 318px) and (max-width: 322px) and (min-height: 248px) and (max-height: 252px) {
+     :root {
+        --img-height: 64px;
+        --img-container-height: 90%;
+        --img-container-width: 98%;
+        --img-container-padding: 1%;
+        --headerPrice-padding: 7px 0 7px;
+        --info-price-rows: 1 / 3;
+        --top-height: 28px;
+        --info-height: 81px;
+        --info-bottom: 77px;
+        --info-position: absolute;
+        --info-margin: 0 0 0 17px;
+        --info-margin-width: calc(100% - 18px);
+        --info-header-height: 44px;
+        --info-header-columns: 1 / 2;
+        --info-price-ore-margin: 45%;
+        /* --info-header-height: 33px; */
+        --info-price-grid-template-rows: 40px 40px;
+        --info-bottom-grid-rows: 47px 33px;
+        --info-bottom-height: 49px;
+        --info-info-height: 28px;
+        --footer-opening-height: 15px;
+        --footer-grid-template-colums: 50% 50%;
+        --footer-grid-template-rows: 28px 145px 1fr;
+        --footer-shop-background-posistion: left 25px center;
+        --footer-shop-size: 67% !important;
+        --footer-logo-background-posistion: right 12px center;
+        --footer-logo-size: 89% !important;
+        --footer-line-display-side: none;
+        /* --img-container-padding: 1%; */
+        --info-price-ore-margin: 35%;
+    }
+    .__maximat {
+        --display-br: none;
+    }
+    .__nordby {
+        /* --text-font: Trebuchet; */
+        --img-container-width: 56%;
+        --img-container-height: 87%;
+        --img-container-left: 40%;
+        --info-header-margin: 18% auto 0;
+        --info-price-ore-margin: 10%;
+        --info-price-grid-template-columns: max(85px) 29px;
+        --info-price-underPrice-width: 54%;
+        --info-price-underPrice-height: 9%;
+        --info-price-height: 65px;
+        /* --info-header-margin-left: 22px; */
+        --info-header-margin-left: 0;
+        --info-header-width: 150px;
+        /* --info-header-height: 28px; */
+        --info-n-height: 64vh;
+        --info-n-width: 64vh;
+        --info-n-top: 0.8vh;
+        --info-n-left: 3vh;
+        --info-header-height: 33px;
+        --info-info-height: 15px;
+        --img-height: 178px;
+        --top-height: 0px;
+        --footer-opening-height: auto;
+        --footer-opening-height: 75%;
+        --footer-opening-height: 100%;
+        --footer-text-hide-start: none;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        /* --footer-grid-template-colums: 25% 25% 50%; */
+        --footer-grid-template-colums: 95px 70px 1fr;
+        --footer-grid-template-rows: 1fr 84px;
+        --footer-shop-grid-column: 1 / 2;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-logo-grid-column: 3 / 4;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-line-display-side: none;
+        --footer-opening-margin: -4% 0 0 0;
+        --footer-shop-background-posistion: left 15px center;
+        --footer-shop-size: 78% !important;
+        --footer-logo-background-posistion: right 12px center;
+        --footer-logo-size: 89% !important;
+    }
+    .__svinesund {
+        --top-height: 0px;
+        --footer-opening-width: 100px;
+        --footer-opening-height: 100%;
+        /* --img-height: 98px;
+        --info-height: 66px; */
+        --img-height: 89px;
+        --info-height: 84px;
+        --footer-opening-height: 70px;
+        --footer-grid-template-colums: 50% 50%;
+        --footer-grid-template-rows: 173px 1fr;
+        --footer-opening-grid-column: 1 / 2;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-logo-grid-column: 2 /3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-text-hide-start: none;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        --footer-line-display-side: none;
+        --footer-logo-size: 76% !important;
+        --footer-logo-background-posistion: right 20px center;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 582px) and (min-height: 498px) and (max-height: 502px) {
+     :root {
+        --top-height: 0px;
+        --info-price-grid-template-columns: max(110px) 40px;
+        --img-height: 362px;
+        --img-container-height: 69%;
+        --info-position: absolute;
+        --info-bottom: 138px;
+        --info-height: 112px;
+        --info-margin: auto 0 auto 28px;
+        --info-bottom-height: 40px;
+        --info-header-height: 100%;
+        /* --info-width: 514px; */
+        --info-width: 511px;
+        --info-bottom-grid-columns: calc(65%) calc(30% - 10px);
+        --info-bottom-grid-rows: 60px 30px;
+        --info-price-margins: 10px auto auto 10px;
+        --info-margin-width: calc(100% - 29px);
+        --footer-opening-width: 101px;
+        /* --footer-opening-grid-padding: 22px 22px; */
+        --footer-grid-template-colums: 185px 135px 1fr;
+        --footer-grid-template-rows: 362px 138px;
+        --footer-shop-grid-column: 1 / 2;
+        --footer-shop-grid-row: 2 / 3;
+        --footer-logo-grid-column: 3 / 4;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 3;
+        /* --footer-shop-size: 70% !important; */
+        --footer-shop-size: 64% !important;
+        --footer-shop-background-posistion: left 36px center;
+        --footer-logo-size: 85% !important;
+        --footer-logo-background-posistion: right 27px center;
+        --footer-text-hide-start: none;
+        /* --footer-line-display-side: block; */
+        --footer-line-display-side: block;
+        --footer-line-display-bottom: block;
+        --footer-line-break-2: "";
+        --footer-line-break-3: "\a";
+        --info-header-columns: 1 / 2;
+        --info-header-rows: 1 / 2;
+        /* --info-header-height: 54px; */
+        --info-header-height: 48px;
+        --info-info-columns: 1 / 2;
+        --info-info-rows: 2 / 3;
+        --info-info-height: 30px;
+        --info-price-columns: 2 / 3;
+        --info-price-rows: 1 / 3;
+        --info-price-height: 110px;
+        --headerPrice-padding: 10px 0;
+        --info-price-ore-margin: 32%;
+    }
+    .__nordby {
+        /* --info-price-ore-margin: 1%; */
+        --info-price-ore-margin: 13%;
+        --img-container-width: 96%;
+        --img-container-height: 94%;
+        --img-container-width-center: 60%;
+        --img-container-left: 0%;
+        --img-img-size: 200px !important;
+        /* --info-header-margin: 17% auto 0; */
+        --info-header-margin: 17% auto 0;
+        --info-header-height: 45px;
+        --info-header-height: 64px;
+        --info-price-grid-template-columns: max(175px) 50px;
+        --info-price-underPrice-height: 26px;
+        --info-price-underPrice-width: 55%;
+        --info-info-height: 27px;
+        /* --img-container-height: 362px; */
+        --info-price-height: 127px;
+        --footer-opening-width: 3100%;
+        /* --info-n-top: 2vh;
+        --info-n-left: 2vh; */
+        --info-n-top-bottom: 1.5vh;
+        --info-n-top-top: 9vh;
+        --info-n-left-left: 52.5vh;
+        --info-n-left-right: 1.5vh;
+        --info-n-top: 2.4vh;
+        --info-n-left: 52.5vh;
+        --info-n-height: 62.2vh;
+        --info-n-width: 62.2vh;
+        --footer-opening-height: 56%;
+        --footer-shop-background-posistion: left 32px center;
+        --footer-shop-size: 75% !important;
+        --footer-logo-background-posistion: right 23px center;
+        --footer-logo-size: 90% !important;
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: none;
+        /* --text-font: Trebuchet; */
+        /* --footer-grid-template-colums: 412px 168px;
+        --footer-grid-template-rows: 1fr 2fr 1fr;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 3 / 4;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 2; */
+    }
+    .__svinesund {
+        --img-container-height: 63%;
+        --info-width: 525px;
+        --info-bottom-grid-rows: 68px 42px;
+        --footer-line-display-side: none;
+        --footer-opening-height: 60%;
+        --footer-opening-width: 180px;
+        --footer-grid-template-colums: 50% 50%;
+        --footer-grid-template-colums: 51% 1fr;
+        --info-price-grid-template-rows: 50% 50%;
+        --info-price-ore-margin: 17%;
+        --footer-opening-grid-column: 1 / 2;
+        --footer-opening-grid-row: 2 / 3;
+        --footer-logo-grid-column: 2 /3;
+        --footer-logo-grid-row: 2 / 3;
+        /* --footer-logo-size: 78% !important; */
+        --footer-logo-background-posistion: left 3px center;
+        --info-margin: auto 0 auto 20px;
+        --info-bottom-grid-columns: calc(66%) calc(31% - 4px);
+        --info-bottom-grid-gap: 0 4px;
+        --info-info-height: 21px;
+        --info-price-height: 100px;
+        --info-price-grid-template-columns: max(130px) 40px;
+        --info-margin: 4px 0 auto 20px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 582px) and (min-height: 398px) and (max-height: 402px) {
+     :root {
+        --top-height: 0px;
+        --img-height: 288px;
+        --img-width: 412px;
+        --info-price-grid-template-columns: max(92px) 24px;
+        /* --info-bottom-grid-rows: 50% 50%; */
+        --info-position: absolute;
+        --info-bottom: 0;
+        --info-right: auto;
+        /* --info-height: 92px; */
+        --info-margin: 0 0 0 18px;
+        --info-height: 112px;
+        --info-info-height: 40px;
+        --info-bottom-height: 40px;
+        --info-header-height: 38px;
+        --info-width: 412px;
+        /* --info-bottom-grid-columns: calc(55%) calc(30% - 10px); */
+        --info-bottom-grid-columns: 285px 75px;
+        --info-bottom-grid-columns: 285px 1fr;
+        --info-bottom-grid-rows: 55px 36px;
+        --info-price-margins: 10px auto auto 10px;
+        --info-price-height: 104px;
+        --info-info-line-height: 1.4;
+        --footer-opening-width: 150px;
+        --footer-opening-height: auto;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        /* --footer-opening-grid-padding: 7% 10%; */
+        --footer-grid-template-colums: 412px 168px;
+        --footer-grid-template-rows: 230px 1fr 1fr;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 3 / 4;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-shop-size: 50% !important;
+        /* --footer-logo-size: 58% !important; */
+        --footer-logo-size: 83% !important;
+        --footer-line-display-bottom: block;
+        --info-header-columns: 1 / 2;
+        --info-header-rows: 1 / 2;
+        --info-info-columns: 1 / 2;
+        --info-info-rows: 2 / 3;
+        --info-price-columns: 2 / 3;
+        --info-price-rows: 1 / 3;
+        --headerPrice-padding: 10px 0;
+        /* --info-price-ore-margin: 25%; */
+        --info-price-ore-margin: 32%;
+    }
+    .__nordby {
+        --img-img-size: 180px !important;
+        --img-container-width: 91.3%;
+        --img-container-width-center: 65%;
+        --info-info-height: 21px;
+        --info-price-height: 96px;
+        --info-price-ore-margin: 5%;
+        --info-price-underPrice-width: 60%;
+        --info-price-underPrice-height: 20px;
+        /* --info-price-ore-margin: 18%; */
+        --info-header-height: 44px;
+        --info-header-margin: 17% auto 0;
+        /* --info-n-top: 36vh;
+        --info-n-left: 39vh; */
+        --info-n-top-bottom: 1.5vh;
+        --info-n-top-top: 39.5vh;
+        --info-n-left-left: 39.5vh;
+        --info-n-left-right: 1.5vh;
+        --info-n-top: 40.7vh;
+        --info-n-left: 37.3vh;
+        --info-n-height: 58vh;
+        --info-n-width: 58vh;
+        --info-price-grid-template-columns: max(125px) 60px;
+        /* --info-price-grid-template-columns: max(125px) 100px; */
+        /* --img-container-height: 362px; */
+        /* --img-container-height: 60%; */
+        /* --img-container-left: 40%; */
+        --img-height: 100%;
+        /* --text-font: Trebuchet; */
+        /* --footer-grid-template-colums: 412px 168px; */
+        --footer-grid-template-colums: 393px 187px;
+        /* --footer-grid-template-rows: 1fr 1fr 1fr; */
+        --footer-grid-template-rows: 125px 1fr 1fr;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 3 / 4;
+        --footer-logo-size: 82% !important;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 2;
+        --footer-opening-width: 100%;
+        --footer-opening-height: 100%;
+    }
+    .__svinesund {
+        --img-container-height: 94%;
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: none;
+        --footer-opening-width: 130px;
+        --footer-opening-height: 30px;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-grid-template-rows: 72% 28%;
+        --info-price-grid-template-rows: 35% 50%;
+        --info-price-grid-template-columns: 90px 30px;
+        --info-bottom-grid-columns: 275px 1fr;
+        --info-bottom-grid-rows: 51px 61px;
+        --footer-logo-size: 86% !important;
+        --info-price-ore-margin: 41%;
+        --info-info-height: 50px;
+    }
+}
+
+@media (min-width: 978px) and (max-width: 982px) and (min-height: 298px) and (max-height: 302px) {
+     :root {
+        --top-height: 0px;
+        --img-height: 406px;
+        --img-container-height: 51%;
+        --img-width: 779px;
+        --info-margin: 3px 0 0 25px;
+        --info-margin-width: calc(100% - 26px);
+        --info-price-grid-template-columns: max(110px) 40px;
+        --info-position: absolute;
+        --info-bottom: 0;
+        --info-right: 201px;
+        /* --info-height: 84px; */
+        --info-height: 110px;
+        --info-info-height: 30px;
+        --info-bottom-height: 40px;
+        --info-header-height: 48px;
+        --info-width: 526px;
+        --info-bottom-grid-columns: calc(55%) calc(30% - 10px);
+        --info-bottom-grid-columns: calc(65%) calc(20% - 10px);
+        --info-bottom-grid-rows: 63px 1fr;
+        --info-price-margins: 10px auto auto 10px;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        /* --footer-opening-grid-padding: 7% 7%; */
+        --footer-grid-template-colums: 779px 201px;
+        --footer-grid-template-rows: 104px 106px 1fr;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 3 / 4;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-shop-size: 48% !important;
+        --footer-logo-size: 85% !important;
+        --footer-line-display-bottom: block;
+        --info-header-columns: 1 / 2;
+        --info-header-rows: 1 / 2;
+        --info-info-columns: 1 / 2;
+        --info-info-rows: 2 / 3;
+        --info-price-columns: 2 / 3;
+        --info-price-rows: 1 / 3;
+        --info-price-height: 104px;
+        --headerPrice-padding: 5px 0;
+        --info-price-ore-margin: 3%;
+        --info-price-ore-margin: 32%;
+    }
+    .__nordby {
+        --text-z-index: 9;
+        /* --info-n-top: -5vh;
+        --info-n-left: 30vw;
+        --info-n-height: 110vh;
+        --info-n-width: 110vh; */
+        --info-n-top: -7.1vh;
+        --info-n-left: 35.8vw;
+        --info-n-height: 113vh;
+        --info-n-width: 113vh;
+        /* --footer-grid-template-colums: 450px 1fr; */
+        /* --footer-grid-template-colums: 523px 1fr; */
+        --footer-grid-template-colums: 468px 1fr;
+        --footer-opening-grid-padding: 0% 0% 0% 35%;
+        --info-header-width: 500px;
+        --info-header-height: 64px;
+        --info-info-height: 28px;
+        /* --info-price-height: 100px; */
+        --info-price-height: 135px;
+        --info-price-grid-template-columns: max(180px) 75px;
+        --info-price-grid-template-rows: 60% 40%;
+        --info-price-ore-margin: 5%;
+        --info-price-underPrice-width: 60%;
+        --info-price-underPrice-height: 20px;
+        --img-img-size: 54% !important;
+        /* --img-container-height: 100vh; */
+        --img-container-height: 90vh;
+        /* --img-width: 464px; */
+        --img-width: 470px;
+        --img-container-width: 80%;
+        /* --img-container-left: 40%; */
+        /* --text-font: Trebuchet; */
+        /* --footer-grid-template-colums: 412px 168px; */
+        --footer-grid-template-rows: 1fr 1fr 2fr;
+        --footer-grid-template-rows: 1fr 45px 1fr;
+        --footer-text-hide-start: none;
+        --footer-line-break-2: "";
+        --footer-line-break-3: "";
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 3 / 4;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 2;
+        /* --footer-shop-size: 20% !important;
+        --footer-logo-size: 50% !important;
+        --footer-shop-background-posistion: right 35px center;
+        --footer-logo-background-posistion: right 35px center; */
+        --footer-shop-size: 25% !important;
+        --footer-logo-size: 48% !important;
+        --footer-shop-background-posistion: right 28px top 27px;
+        --footer-logo-background-posistion: right 24px top 1px;
+    }
+    .__svinesund {
+        --img-container-height: 39%;
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: none;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-grid-template-rows: 50% 50%;
+        --info-price-grid-template-rows: 50% 50%;
+        --footer-logo-size: 86% !important;
+        --footer-opening-width: 80%;
+        --info-header-height: 55px;
+        --info-width: 572px;
+        --info-margin: 3px 0 0 18px;
+        --info-bottom-grid-columns: calc(65%) calc(20% - 4px);
+        --info-price-grid-template-columns: max(140px) 50px;
+        --info-bottom-grid-gap: 0 4px;
+        --info-price-ore-margin: 25%;
+    }
+}
+
+@media (min-width: 978px) and (max-width: 982px) and (min-height: 598px) and (max-height: 602px) {
+     :root {
+        --top-height: 0px;
+        --img-height: 406px;
+        --img-width: 694px;
+        --img-container-height: 93%;
+        /* --info-position: absolute; */
+        --info-margin: 0 0 0 34px;
+        --info-margin-width: calc(100% - 35px);
+        --info-price-grid-template-columns: 130px 60px;
+        --info-bottom: 0;
+        --info-right: 0;
+        --info-height: 194px;
+        --info-bottom-height: 40px;
+        --info-header-height: 100%;
+        --info-header-height: 60px;
+        --info-width: 694px;
+        --info-bottom-grid-columns: calc(70%) calc(30% - 10px);
+        --info-bottom-grid-gap: 0 10px;
+        --info-price-margins: 10px auto auto 10px;
+        --info-price-height: 140px;
+        --footer-opening-width: 140px;
+        --footer-opening-width: 230px;
+        --footer-line-break-2: "\a";
+        --footer-line-break-3: "\a";
+        /* --footer-opening-grid-padding: 30% 15% 15% 15%; */
+        --info-info-line-height: 1.4;
+        --footer-grid-template-colums: 694px 286px;
+        --footer-grid-template-rows: 311px 156px 1fr;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 3 / 4;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-shop-size: 49% !important;
+        --footer-logo-size: 85% !important;
+        --footer-line-display-bottom: block;
+        --info-header-columns: 1 / 2;
+        --info-header-rows: 1 / 2;
+        --info-info-columns: 1 / 2;
+        --info-info-rows: 2 / 3;
+        --info-info-height: 60px;
+        --info-price-columns: 2 / 3;
+        --info-price-rows: 1 / 3;
+        --headerPrice-padding: 10px 0;
+        --info-price-ore-margin: 13%;
+        --info-price-ore-margin: 32%;
+    }
+    .__nordby {
+        --img-img-size: 60% !important;
+        --img-img-size-center: 280px !important;
+        --img-height: 100vh;
+        --img-container-width: 92%;
+        --img-container-height: 92%;
+        --img-container-width-center: 50%;
+        /* --info-header-height: 45px; */
+        --info-info-height: 33px;
+        --info-price-height: 130px;
+        --info-info-height: 28px;
+        /* --text-font: Trebuchet; */
+        /* --footer-grid-template-colums: 412px 168px; */
+        --info-n-top: 37vh;
+        --info-n-left: 53vh;
+        --info-n-top-bottom: 1.5vh;
+        --info-n-top-top: 30.5vh;
+        --info-n-left-left: 44.5vh;
+        --info-n-left-right: 1.5vh;
+        --info-header-width: 92%;
+        --info-header-height: 80px;
+        --info-header-margin: 18% auto 0;
+        --info-price-height: 166px;
+        --info-price-grid-template-columns: max(230px) 85px;
+        --info-price-grid-template-rows: 60% 40%;
+        --info-price-ore-margin: 6%;
+        --info-price-underPrice-width: 60%;
+        --footer-grid-template-rows: 143px 276px 1fr;
+        --footer-grid-template-colums: 664px 316px;
+        --info-n-top: 32.7vh;
+        --info-n-left: 42.4vh;
+        --info-n-height: 65vh;
+        --info-n-width: 65vh;
+        --footer-shop-grid-column: 2 / 3;
+        --footer-shop-grid-row: 1 / 2;
+        --footer-logo-grid-column: 2 / 3;
+        --footer-logo-grid-row: 3 / 4;
+        --footer-opening-grid-column: 2 / 3;
+        --footer-opening-grid-row: 2 / 2;
+        --footer-opening-width: 100%;
+        --footer-opening-height: 250px;
+        --footer-logo-size: 72% !important;
+        --footer-logo-background-posistion: center bottom 63px;
+        --footer-logo-size: 83% !important;
+        --footer-shop-background-posistion: center top 60px;
+        --footer-opening-margin: 7% 0 0 0;
+    }
+    .__svinesund {
+        --footer-line-display-side: none;
+        --footer-line-display-bottom: none;
+        --footer-opening-grid-row: 1 / 2;
+        --footer-logo-grid-row: 2 / 3;
+        --footer-grid-template-rows: 50% 50%;
+        --info-price-grid-template-rows: 50% 50%;
+        --footer-logo-size: 86% !important;
+        --info-price-height: 75%;
+        /* --info-price-ore-margin: 50%; */
+        --info-price-grid-template-columns: 145px 45px;
+        --info-price-grid-template-rows: 49% 47%;
+        --info-price-margin: 29px;
+        --footer-grid-template-rows: 67.5% 32.5%;
+        --footer-logo-background-posistion: center top 23px;
+        --info-price-ore-margin: 25%;
+    }
+}
+
+
+/* @media (min-width: 978px) and (max-width: 982px) and (min-height: 298px) and (max-height: 302px) {
+     :root {
+        --top-height: 100%;
+        --img-height: 100%;
+        --info-height: 0;
+        --top-grid-colum: 2 / 3;
+        --top-grid-row: 1 / 2;
+        --img-grid-colum: 1 / 2;
+        --img-grid-row: 1 / 3;
+        --info-price-grid-colum: 2 / 3;
+        --info-price-grid-row: 2 / 3;
+    }
+    .appContainer {
+        grid-template-columns: 782px 1fr;
+        grid-template-rows: 106px 1fr;
+    }
+} */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+    font-family: var(--text-font);
+    overflow: hidden;
+    width: 100vw;
+}
